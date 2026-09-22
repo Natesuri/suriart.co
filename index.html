@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Suri Art — photography by Nate Suri.">
+  <title>Suri Art</title>
+
+  <style>
+    :root {
+      --background: #111111;
+      --text: #f2f2f2;
+      --muted: #999999;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                   Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      width: min(100% - 40px, 1100px);
+      margin: 0 auto;
+      padding: 56px 0 48px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 36px;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 500;
+      letter-spacing: 0.16em;
+    }
+
+    .hero {
+      display: block;
+      width: 100%;
+      max-height: 75vh;
+      object-fit: contain;
+      margin: 0 auto 32px;
+    }
+
+    .placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 50vh;
+      max-height: 75vh;
+      margin: 0 auto 32px;
+      background: #1d1d1d;
+      color: #888;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 150ms ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      border-bottom-color: currentColor;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: min(100% - 32px, 1100px);
+        padding-top: 36px;
+        padding-bottom: 32px;
+      }
+
+      h1 {
+        margin-bottom: 28px;
+      }
+
+      .hero,
+      .placeholder {
+        margin-bottom: 24px;
+      }
+
+      .placeholder {
+        min-height: 55vh;
+      }
+
+      .links {
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>SURI ART</h1>
+
+    <img class="hero" src="03320028.jpeg" alt="Photograph by Suri Art">
+
+    <nav class="links" aria-label="Contact and social links">
+      <a href="mailto:hello@suri-art.co">hello@suri-art.co</a>
+      <a href="https://instagram.com/suriartri"
+         target="_blank"
+         rel="noopener noreferrer">@suriartri</a>
+    </nav>
+  </main>
+</body>
+</html>
